@@ -15,6 +15,7 @@ module.exports = {
         'blue': '#1D4ED8',
         'green': '#047857',
         'green-light': '#D1FAE5',
+        'green-button': '#10B981',
       },
     },
   },

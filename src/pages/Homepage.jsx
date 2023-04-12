@@ -1,5 +1,6 @@
 import React from "react";
 import Recommend from "../components/molecules/Recommend.jsx";
+import Reviewer from "../components/molecules/Reviewer.jsx";
 // header-left
 import logo from "../assets/logo.svg";
 import bgHeader from "../assets/header.svg";
@@ -26,10 +27,11 @@ import floor from "../assets/icons/floor.svg";
 import phoneWhite from "../assets/icons/phone-white.svg";
 import ownerAvatar from "../assets/owner.svg";
 import imageMain from "../assets/group-image2.png";
+import ArticleRecommend from "../components/molecules/ArticleRecommend.jsx";
 
 function Homepage() {
   return (
-    <div className="max-w-[1440px] mx-auto pb-[200px] bg-white">
+    <div className="max-w-[1440px] mx-auto pb-[200px] bg-white border-2">
       <header className="relative">
         <div className="relative flex">
           <main className="w-full h-fit grid grid-cols-2 z-50">
@@ -60,7 +62,7 @@ function Homepage() {
                     className="w-full placeholder:text-sm pl-[12%] py-[10px] rounded-full border-[1px] border-slate-500"
                     placeholder="Search for the location you want!"
                   />
-                  <button className="flex items-center bg-[#10B981] absolute right-1 bottom-1 top-1 rounded-full px-4 hover:bg-[#0c996a]">
+                  <button className="flex items-center bg-green-button absolute right-1 bottom-1 top-1 rounded-full px-4 hover:bg-[#0c996a]">
                     <p className="text-[15px] text-white mr-2 ">Search</p>
                     <img alt="" src={arrowRight} className="h-[20px]" />
                   </button>
@@ -97,7 +99,7 @@ function Homepage() {
                       Property
                     </div>
                   </div>
-                  <div className="text-[#10B981] px-3 py-2 rounded-full border-green-light border-[1px] bg-green-light">
+                  <div className="text-green-button px-3 py-2 rounded-full border-green-light border-[1px] bg-green-light">
                     Sign Up!
                   </div>
                 </nav>
@@ -163,7 +165,7 @@ function Homepage() {
             <bottom className="bg-slate-300 py-2 px-5 rounded-[15px] flex justify-center items-center mx-2">
               <img alt="" src={arrowLeft} className="w-[10px]" />
             </bottom>
-            <bottom className="bg-[#10B981] py-2 px-5 rounded-[15px] flex justify-center items-center mx-2">
+            <bottom className="bg-green-button py-2 px-5 rounded-[15px] flex justify-center items-center mx-2">
               <img alt="" src={arrowRight} className="w-[10px]" />
             </bottom>
           </div>
@@ -215,16 +217,66 @@ function Homepage() {
                   <h3 className="font-semibold">Dianne</h3>
                   <p className="text-gray text-[15px]">Manager Director</p>
                 </div>
-                <div className="flex items-center bg-green text-white py-2 px-3 rounded-full ml-[20%]">
+                <button className="flex items-center bg-green-button text-white py-2 px-3 rounded-full ml-[20%]">
                   <img alt="" src={phoneWhite} className="w-[15px] mr-1" />
                   <p>Contact Now</p>
-                </div>
+                </button>
               </div>
             </div>
           </section>
           <section className="flex-1">
             <img alt="" src={imageMain} className="w-[65%]" />
           </section>
+        </div>
+      </section>
+      <section className="mt-[110px]">
+        <div className="flex flex-col items-center">
+          <hr className="w-[40px] text-yellow mb-2" />
+          <p className="text-[14px] text-yellow mb-3">See Our Review</p>
+          <h3 className="text-black font-bold text-[25px]">
+            What Our User Say About Us
+          </h3>
+        </div>
+        <Reviewer />
+      </section>
+      <section className="lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[210px]">
+        <div className="flex flex-col items-center">
+          <hr className="w-[40px] text-yellow mb-2" />
+          <p className="text-[14px] text-yellow mb-3">
+            See Tips And Trick From Our Partnership
+          </p>
+          <h3 className="text-black font-bold text-[25px] text-center">
+            Find Out More About
+            <br />
+            Selling And Buying Homes
+          </h3>
+          <button className="py-2 px-3 bg-green-button mt-5 text-white rounded-full">
+            More Article
+          </button>
+        </div>
+        <ArticleRecommend />
+      </section>
+      <section className="lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px] ">
+        <div className="bg-gray rounded-lg py-[60px]">
+          <h3 className="text-[28px] font-semibold text-center">
+            Subscribe For More Info
+            <br /> and update from Hounter
+          </h3>
+          <div className="relative flex justify-center w-[45%] mx-auto mt-4">
+            <img
+              alt=""
+              src={locationLogo}
+              className="absolute top-[25%] left-[5%]"
+            />
+            <input
+              className="w-full placeholder:text-sm pl-[12%] py-[10px] rounded-full border-[1px] border-slate-500"
+              placeholder="Your email here"
+            />
+            <button className="flex items-center bg-green-button absolute right-1 bottom-1 top-1 rounded-full px-4 hover:bg-[#0c996a]">
+              <p className="text-[15px] text-white mr-2 ">Search</p>
+              <img alt="" src={arrowRight} className="h-[20px]" />
+            </button>
+          </div>
         </div>
       </section>
     </div>
