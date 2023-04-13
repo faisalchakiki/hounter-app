@@ -10,7 +10,7 @@ function Button({ direction, value, className,type}) {
     );
   }
   return (
-    <button className={`flex items-center bg-green-button py-2 px-3 rounded-full ml-[20%] ${className}`}>
+    <button className={`flex items-center bg-green-button py-2 px-3 rounded-full ${className}`}>
       {direction === "contact" ? (
         <img alt="" src={phoneWhite} className="w-[15px] mr-1" />
       ) : null}

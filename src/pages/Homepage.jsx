@@ -122,7 +122,7 @@ function Homepage() {
                   <h3 className="font-semibold">Dianne</h3>
                   <p className="text-gray text-[15px]">Manager Director</p>
                 </div>
-                <Button direction="contact" value="Contact Now" />
+                <Button direction="contact" value="Contact Now" className='ml-[20%]' />
               </div>
             </div>
           </section>
