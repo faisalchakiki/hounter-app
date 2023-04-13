@@ -54,7 +54,7 @@ function Navbar() {
           </div>
         </div>
       </div>
-      <Button value='Sign Up!' className='ml-0 bg-green-light px-4' type='light' />
+      <Button value='Sign Up!' className='px-4' type='light' />
     </nav>
   );
 }

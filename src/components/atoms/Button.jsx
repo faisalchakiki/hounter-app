@@ -4,7 +4,7 @@ import phoneWhite from "../../assets/icons/phone-white.svg";
 function Button({ direction, value, className,type}) {
   if(type === 'light'){
     return (
-      <button className={`flex items-center bg-green-button py-2 px-3 rounded-full ml-[20%] ${className}`}>
+      <button className={`flex items-center bg-green-light py-2 px-3 rounded-full ${className}`}>
         <p className='text-primary'>{value}</p>
       </button>
     );
