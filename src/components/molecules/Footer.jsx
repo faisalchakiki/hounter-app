@@ -7,7 +7,7 @@ import twiter from "../../assets/icons/twiter.svg";
 const Footer = () => {
   return (
     <div className="relative lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px] mb-[50px]">
-      <div className="flex h-[200px]">
+      <div className="relative z-50 flex h-[200px]">
         <div className="w-[35%] mr-auto">
           <Logo className="mb-[20px]" />
           <p className="text-gray mb-[20px]">
