@@ -1,8 +1,13 @@
 import React from "react";
 import Recommend from "../components/molecules/Recommend.jsx";
+import InputWithButton from "../components/atoms/InputWithButton.jsx";
+import ArticleRecommend from "../components/molecules/ArticleRecommend.jsx";
 import Reviewer from "../components/molecules/Reviewer.jsx";
+import Logo from "../components/atoms/Logo.jsx";
+import Footer from "../components/molecules/Footer.jsx";
+import SummaryHeader from "../components/molecules/SummaryHeader.jsx";
+import Button from "../components/atoms/Button.jsx";
 // header-left
-import logo from "../assets/logo.svg";
 import bgHeader from "../assets/header.svg";
 import parner1 from "../assets/partner-1.svg";
 import parner2 from "../assets/partner-2.svg";
@@ -10,36 +15,32 @@ import parner3 from "../assets/partner-3.svg";
 import parner4 from "../assets/partner-4.svg";
 import locationLogo from "../assets/icons/location.svg";
 import arrowRight from "../assets/icons/right-arrow.svg";
-// header-right
-import peoples from "../assets/people-react.svg";
-import houseReact from "../assets/house-header.svg";
-import userReact from "../assets/user-react.svg";
-// recomenndation
-import houseLogo from "../assets/icons/house-logo.svg";
-import villaLogo from "../assets/icons/villa-logo.svg";
-import apartLogo from "../assets/icons/apart-logo.svg";
-import arrowLeft from "../assets/icons/left-arrow.svg";
 // ready to sell
 import bedroom from "../assets/icons/bedroom.svg";
 import bathroom from "../assets/icons/bath.svg";
 import garage from "../assets/icons/car-garage.svg";
 import floor from "../assets/icons/floor.svg";
-import phoneWhite from "../assets/icons/phone-white.svg";
 import ownerAvatar from "../assets/owner.svg";
 import imageMain from "../assets/group-image2.png";
-import ArticleRecommend from "../components/molecules/ArticleRecommend.jsx";
+// subs image
+import subs1 from "../assets/icons/big-buble.svg";
+import subs2 from "../assets/icons/big-buble2.svg";
+import subs3 from "../assets/icons/buble-house.svg";
+import subs4 from "../assets/icons/buble-house2.svg";
+import subs5 from "../assets/icons/avatar-user2.svg";
+import subs6 from "../assets/icons/avatar-user.svg";
+import subs7 from "../assets/icons/avatar-user3.svg";
+import Navbar from "../components/molecules/Navbar.jsx";
 
 function Homepage() {
+  
   return (
-    <div className="max-w-[1440px] mx-auto pb-[200px] bg-white border-2">
+    <div className="max-w-[1440px] mx-auto bg-white">
       <header className="relative">
         <div className="relative flex">
           <main className="w-full h-fit grid grid-cols-2 z-50">
             <section className="pt-5 lg:ml-[100px] md:ml-[60px] ml-[30px]">
-              <div className="flex items-center font-semibold mb-[50px]">
-                <img alt="logo" src={logo} className="w-[35px]" />
-                <h1 className="ml-1 text-[16px] text-primary">Hounter</h1>
-              </div>
+              <Logo className="mb-[50px]" />
               <div className="flex flex-col justify-evenly h-[80%]">
                 <h3 className="text-[40px] font-bold mb-[20px] md:mb-0">
                   Find The Place To
@@ -52,21 +53,7 @@ function Homepage() {
                   Everything you need about finding your place to live will be
                   here, where it will be easier for you
                 </p>
-                <div className="relative flex w-[85%] mb-[20px] md:mb-0">
-                  <img
-                    alt=""
-                    src={locationLogo}
-                    className="absolute top-[25%] left-[5%]"
-                  />
-                  <input
-                    className="w-full placeholder:text-sm pl-[12%] py-[10px] rounded-full border-[1px] border-slate-500"
-                    placeholder="Search for the location you want!"
-                  />
-                  <button className="flex items-center bg-green-button absolute right-1 bottom-1 top-1 rounded-full px-4 hover:bg-[#0c996a]">
-                    <p className="text-[15px] text-white mr-2 ">Search</p>
-                    <img alt="" src={arrowRight} className="h-[20px]" />
-                  </button>
-                </div>
+                <InputWithButton direction="search" />
                 <div className="w-[70%]">
                   <p className="text-gray">Our Partnership </p>
                   <div className="flex items-center justify-between">
@@ -81,103 +68,21 @@ function Homepage() {
             <section className="relative">
               <img alt="bg-header" src={bgHeader} className="w-[720px]" />
               <div className="absolute top-0 w-[100%] h-[100%] flex flex-col justify-between">
-                <nav className="flex mt-5 pl-[10%] justify-between w-[100%] pr-10">
-                  <div className="flex justify-around items-center w-[70%]">
-                    <a
-                      href="/"
-                      className="text-white px-3 py-2 rounded-full border-white border-[1px]"
-                    >
-                      About Us
-                    </a>
-                    <a
-                      href="/"
-                      className="text-white px-3 py-2 rounded-full border-white border-[1px]"
-                    >
-                      Article
-                    </a>
-                    <div className="text-white px-3 py-2 rounded-full border-white border-[1px]">
-                      Property
-                    </div>
-                  </div>
-                  <div className="text-green-button px-3 py-2 rounded-full border-green-light border-[1px] bg-green-light">
-                    Sign Up!
-                  </div>
-                </nav>
-                <div className="flex items-start justify-start mb-[10%] pl-[10%] scrollbar overflow-x-auto">
-                  <div className="bg-white flex items-center justify-evenly py-1 px-2 rounded-[30px] mr-5 w-full">
-                    <img src={peoples} alt="img-react" className="h-[85px]" />
-                    <div className="flex flex-col justify-center items-start">
-                      <h3 className="text-black fnt-bold">1K+ People</h3>
-                      <p className="text-gray">Successfully Getting Home</p>
-                    </div>
-                  </div>
-                  <div className="bg-white flex items-center justify-evenly py-1 px-2 rounded-[30px] mr-5 w-full">
-                    <img
-                      src={houseReact}
-                      alt="img-react"
-                      className="h-[85px]"
-                    />
-                    <div className="flex flex-col justify-center items-start">
-                      <h3 className="text-black fnt-bold">1K+ People</h3>
-                      <p className="text-gray">Successfully Getting Home</p>
-                    </div>
-                  </div>
-                  <div className="bg-white flex items-center justify-evenly py-1 px-2 rounded-[30px] mr-5">
-                    <img src={userReact} alt="img-react" className="h-[85px]" />
-                    <div className="flex flex-col justify-center items-start">
-                      <h3 className="text-black fnt-bold">1K+ People</h3>
-                      <p className="text-gray">Successfully Getting Home</p>
-                    </div>
-                  </div>
-                </div>
+                <Navbar />
+                <SummaryHeader />
               </div>
             </section>
           </main>
         </div>
         {/* <div className='w-[35%] absolute left-0 h-[35vh] rounded-br-full rounded--full bg-gradient-to-r from-[#a6f3f0d0] to-[#8aecb9ca] blur-md'></div> */}
       </header>
-      <section className="lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[110px]">
-        <div className="flex w-full items-center  justify-between">
-          <div className="w-[30%]">
-            <div className="flex items-center text-yellow">
-              <hr className="w-[40px] mr-1" />
-              <p className="text-[14px]">Our Recommendation</p>
-            </div>
-            <h3 className="text-black font-bold text-[25px] ml-[40px]">
-              Featured House
-            </h3>
-          </div>
-          <div className="flex w-[50%] items-center justify-start">
-            <div className="flex items-center px-3 py-2 mx-2 md:mx-5 border-[2px] border-green-light bg-green-light text-green rounded-[15px]">
-              <img alt="houseLogo" src={houseLogo} className="w-[18px] mr-1" />
-              <p className="text-[17px]">House</p>
-            </div>
-            <div className="flex items-center px-3 py-2 mx-2 md:mx-5 border-[2px] border-gray rounded-[15px]">
-              <img alt="villaLogo" src={villaLogo} className="w-[18px] mr-1" />
-              <p className="text-[17px]">Villa</p>
-            </div>
-            <div className="flex items-center px-3 py-2 mx-2 md:mx-5 border-[2px] border-gray rounded-[15px]">
-              <img alt="apartLogo" src={apartLogo} className="w-[18px] mr-1" />
-              <p className="text-[17px]">Apartement</p>
-            </div>
-          </div>
-          <div className="flex w-[20%] items-center">
-            <bottom className="bg-slate-300 py-2 px-5 rounded-[15px] flex justify-center items-center mx-2">
-              <img alt="" src={arrowLeft} className="w-[10px]" />
-            </bottom>
-            <bottom className="bg-green-button py-2 px-5 rounded-[15px] flex justify-center items-center mx-2">
-              <img alt="" src={arrowRight} className="w-[10px]" />
-            </bottom>
-          </div>
-        </div>
-        <Recommend />
-      </section>
+      <Recommend />
       <section className="lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[110px]">
         <div className="flex items-start justify-between h-[100]">
           <section className="flex-1">
             <div className="flex items-center text-yellow">
               <hr className="w-[40px] mr-1" />
-              <p className="text-[14px]">Ready to Sell!</p>
+              <p className="text-[14px] text-yellow">Ready to Sell!</p>
             </div>
             <div className="ml-[40px] w-[70%]">
               <h3 className="text-black font-bold text-[25px] mb-[3%]">
@@ -217,10 +122,7 @@ function Homepage() {
                   <h3 className="font-semibold">Dianne</h3>
                   <p className="text-gray text-[15px]">Manager Director</p>
                 </div>
-                <button className="flex items-center bg-green-button text-white py-2 px-3 rounded-full ml-[20%]">
-                  <img alt="" src={phoneWhite} className="w-[15px] mr-1" />
-                  <p>Contact Now</p>
-                </button>
+                <Button direction="contact" value="Contact Now" />
               </div>
             </div>
           </section>
@@ -239,7 +141,7 @@ function Homepage() {
         </div>
         <Reviewer />
       </section>
-      <section className="lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[210px]">
+      <section className="mt-[110px]">
         <div className="flex flex-col items-center">
           <hr className="w-[40px] text-yellow mb-2" />
           <p className="text-[14px] text-yellow mb-3">
@@ -250,35 +152,47 @@ function Homepage() {
             <br />
             Selling And Buying Homes
           </h3>
-          <button className="py-2 px-3 bg-green-button mt-5 text-white rounded-full">
-            More Article
-          </button>
+          <Button value="More Article" className="ml-0 mt-5" />
         </div>
         <ArticleRecommend />
       </section>
-      <section className="lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px] ">
-        <div className="bg-gray rounded-lg py-[60px]">
-          <h3 className="text-[28px] font-semibold text-center">
-            Subscribe For More Info
-            <br /> and update from Hounter
-          </h3>
-          <div className="relative flex justify-center w-[45%] mx-auto mt-4">
-            <img
-              alt=""
-              src={locationLogo}
-              className="absolute top-[25%] left-[5%]"
-            />
-            <input
-              className="w-full placeholder:text-sm pl-[12%] py-[10px] rounded-full border-[1px] border-slate-500"
-              placeholder="Your email here"
-            />
-            <button className="flex items-center bg-green-button absolute right-1 bottom-1 top-1 rounded-full px-4 hover:bg-[#0c996a]">
-              <p className="text-[15px] text-white mr-2 ">Search</p>
-              <img alt="" src={arrowRight} className="h-[20px]" />
-            </button>
+      <section className="relative lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px]">
+        <div className="z-10 bg-gray rounded-[25px] py-[60px] bg-gradient-to-r from-[#98acee] to-[#f6fffa]">
+          <div className="z-50">
+            <h3 className="text-[28px] font-semibold text-center">
+              Subscribe For More Info
+              <br /> and update from Hounter
+            </h3>
+            <InputWithButton direction="mail" />
           </div>
         </div>
+        <div>
+          <img src={subs1} alt="" className="absolute top-[5%] left-[80%]" />
+          <img src={subs2} alt="" className="absolute top-[5%] left-[10%]" />
+          <img
+            src={subs3}
+            alt=""
+            className="absolute bottom-[15%] left-[15%]"
+          />
+          <img
+            src={subs4}
+            alt=""
+            className="absolute bottom-[13%] right-[10%]"
+          />
+          <img src={subs5} alt="" className="absolute top-[25%] left-[18%]" />
+          <img
+            src={subs6}
+            alt=""
+            className="absolute bottom-[35%] right-[22%] w-[35px]"
+          />
+          <img
+            src={subs7}
+            alt=""
+            className="absolute bottom-[35%] left-[10%]"
+          />
+        </div>
       </section>
+      <Footer />
     </div>
   );
 }

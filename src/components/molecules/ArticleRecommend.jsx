@@ -6,9 +6,9 @@ import clock from "../../assets/icons/clock.svg";
 
 function ArticleRecommend() {
   return (
-    <div className="flex mt-10">
+    <div className="flex mt-10 lg:ml-[100px] md:ml-[60px] ml-[30px]">
       <div className="flex-1">
-        <div className="flex items-start h-[140px] mb-4">
+        <div className="flex items-start h-[140px] mb-5">
           <img
             alt=""
             src={ImageArtikel2}
@@ -21,18 +21,18 @@ function ArticleRecommend() {
                 src={ownerAvatar}
                 className="w-[35px] mr-4 rounded-full"
               />
-              <h3 className="font-semibold">Brian Michael</h3>
+              <h3>Brian Michael</h3>
             </div>
             <h2 className="font-semibold">
               The best way to know the quality of the house we want to buy
             </h2>
             <div className="flex items-center">
               <img alt="" src={clock} className="w-[20px] mr-2" />
-              <p>2 min read | 24 Apr 2021</p>
+              <p className="text-gray">2 min read | 24 Apr 2021</p>
             </div>
           </div>
         </div>
-        <div className="flex items-start h-[140px] mb-4">
+        <div className="flex items-start h-[140px] mb-5">
           <img
             alt=""
             src={ImageArtikel1}
@@ -45,14 +45,14 @@ function ArticleRecommend() {
                 src={ownerAvatar}
                 className="w-[35px] mr-4 rounded-full"
               />
-              <h3 className="font-semibold">Brian Michael</h3>
+              <h3>Brian Michael</h3>
             </div>
             <h2 className="font-semibold">
               The best way to know the quality of the house we want to buy
             </h2>
             <div className="flex items-center">
               <img alt="" src={clock} className="w-[20px] mr-2" />
-              <p>2 min read | 24 Apr 2021</p>
+              <p className="text-gray">2 min read | 24 Apr 2021</p>
             </div>
           </div>
         </div>
@@ -69,14 +69,14 @@ function ArticleRecommend() {
                 src={ownerAvatar}
                 className="w-[35px] mr-4 rounded-full"
               />
-              <h3 className="font-semibold">Brian Michael</h3>
+              <h3>Brian Michael</h3>
             </div>
             <h2 className="font-semibold">
               The best way to know the quality of the house we want to buy
             </h2>
             <div className="flex items-center">
               <img alt="" src={clock} className="w-[20px] mr-2" />
-              <p>2 min read | 24 Apr 2021</p>
+              <p className="text-gray">2 min read | 24 Apr 2021</p>
             </div>
           </div>
         </div>
@@ -95,19 +95,19 @@ function ArticleRecommend() {
                 src={ownerAvatar}
                 className="w-[35px] mr-4 rounded-full"
               />
-              <h3 className="font-semibold">Brian Michael</h3>
+              <h3>Brian Michael</h3>
             </div>
             <h2 className="font-semibold">
               The best way to know the quality of the house we want to buy
             </h2>
-            <p>
+            <p className="text-gray">
               Want to buy a house but are unsure about what we should know, here
               I will try to explain what we should know and check when we want
               to buy a house
             </p>
             <div className="flex items-center">
               <img alt="" src={clock} className="w-[20px] mr-2" />
-              <p>2 min read | 24 Apr 2021</p>
+              <p className="text-gray">2 min read | 24 Apr 2021</p>
             </div>
           </div>
         </div>

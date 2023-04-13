@@ -9,6 +9,7 @@
   margin: 0;
   padding: 0;
   font-family: 'Lexend', sans-serif;
+  color: #0E1735;
 }
 
 .scrollbar::-webkit-scrollbar {
@@ -20,3 +21,8 @@
  -webkit-text-stroke-width: 1px;
  font-family: sans-serif;
 }
+
+.swiper {
+  width: 100%;
+}
+
