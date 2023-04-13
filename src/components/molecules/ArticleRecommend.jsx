@@ -6,7 +6,7 @@ import clock from "../../assets/icons/clock.svg";
 
 function ArticleRecommend() {
   return (
-    <div className="flex mt-10 lg:ml-[100px] md:ml-[60px] ml-[30px]">
+    <div className="flex mt-10 lg:ml-[100px] md:ml-[60px] ml-[30px] z-50 relative">
       <div className="flex-1">
         <div className="flex items-start h-[140px] mb-5">
           <img

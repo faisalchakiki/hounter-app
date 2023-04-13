@@ -33,11 +33,10 @@ import subs7 from "../assets/icons/avatar-user3.svg";
 import Navbar from "../components/molecules/Navbar.jsx";
 
 function Homepage() {
-  
   return (
-    <div className="max-w-[1440px] mx-auto bg-white">
+    <div className="relative overflow-hidden max-w-[1440px] mx-auto bg-white">
       <header className="relative">
-        <div className="relative flex">
+        <div className="flex">
           <main className="w-full h-fit grid grid-cols-2 z-50">
             <section className="pt-5 lg:ml-[100px] md:ml-[60px] ml-[30px]">
               <Logo className="mb-[50px]" />
@@ -74,10 +73,10 @@ function Homepage() {
             </section>
           </main>
         </div>
-        {/* <div className='w-[35%] absolute left-0 h-[35vh] rounded-br-full rounded--full bg-gradient-to-r from-[#a6f3f0d0] to-[#8aecb9ca] blur-md'></div> */}
+        <div className="w-[35%] absolute top-0 left-0 h-[35vh] rounded-br-full bg-gradient-to-r from-[#a6f3f0d0] to-[#8aecb9ca] opacity-50 blur-lg"></div>
       </header>
       <Recommend />
-      <section className="lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[110px]">
+      <section className="relative lg:ml-[100px] md:ml-[60px] ml-[30px] mt-[110px]">
         <div className="flex items-start justify-between h-[100]">
           <section className="flex-1">
             <div className="flex items-center text-yellow">
@@ -122,12 +121,17 @@ function Homepage() {
                   <h3 className="font-semibold">Dianne</h3>
                   <p className="text-gray text-[15px]">Manager Director</p>
                 </div>
-                <Button direction="contact" value="Contact Now" className='ml-[20%]' />
+                <Button
+                  direction="contact"
+                  value="Contact Now"
+                  className="ml-[20%]"
+                />
               </div>
             </div>
           </section>
-          <section className="flex-1">
-            <img alt="" src={imageMain} className="w-[65%]" />
+          <section className="flex-1 relative">
+            <img alt="" src={imageMain} className="w-[65%] z-50 relative" />
+            <div className="absolute z-0 w-[60%] top-[-20%] right-[-5%] h-[100%] rounded-full bg-gradient-to-br from-[#f07565d0] to-[#cde672] opacity-50 blur-lg"></div>
           </section>
         </div>
       </section>
@@ -141,8 +145,8 @@ function Homepage() {
         </div>
         <Reviewer />
       </section>
-      <section className="mt-[110px]">
-        <div className="flex flex-col items-center">
+      <section className="mt-[110px] relative">
+        <div className="flex flex-col items-center relative z-50">
           <hr className="w-[40px] text-yellow mb-2" />
           <p className="text-[14px] text-yellow mb-3">
             See Tips And Trick From Our Partnership
@@ -155,6 +159,7 @@ function Homepage() {
           <Button value="More Article" className="ml-0 mt-5" />
         </div>
         <ArticleRecommend />
+        <div className="absolute w-[35%] top-0 left-[-18%] h-[80%] rounded-full bg-gradient-to-b from-[#4954f4d0] to-[#cde672] opacity-50 blur-lg"></div>
       </section>
       <section className="relative lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px]">
         <div className="z-10 bg-gray rounded-[25px] py-[60px] bg-gradient-to-r from-[#98acee] to-[#f6fffa]">

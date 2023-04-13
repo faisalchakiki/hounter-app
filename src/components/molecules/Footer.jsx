@@ -6,7 +6,7 @@ import twiter from "../../assets/icons/twiter.svg";
 
 const Footer = () => {
   return (
-    <div className="lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px] mb-[50px]">
+    <div className="relative lg:mx-[100px] md:mx-[60px] mx-[30px] mt-[150px] mb-[50px]">
       <div className="flex h-[200px]">
         <div className="w-[35%] mr-auto">
           <Logo className="mb-[20px]" />
@@ -40,6 +40,8 @@ const Footer = () => {
           <p className="mb-[10px] text-gray">info@hounter.com</p>
         </div>
       </div>
+      <div className="absolute w-[25%] bottom-[-35%] right-[-15%] h-[120%] rounded-full bg-[#3279ec] opacity-30 blur-lg"></div>
+      <div className="absolute w-[25%] bottom-[-35%] right-[0%] h-[120%] rounded-full bg-[#d3ec57] opacity-30 blur-lg"></div>
     </div>
   );
 };
